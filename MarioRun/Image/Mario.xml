@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:0b6cc6b0d0742a3c3429038a0c893688:c9609601369f0c3470470b4efe7eea26:9c7051968446926ad5b1b1bbecddee1f$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="Mario.png" width="268" height="496">
+  <Big>
+    <Idle Repeat ="0" Time="100">
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+    </Idle>
+    <Jump Repeat ="0" Time="100">
+      <sprite n="BigJump.png" x="139" y="1" w="68" h="131" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="135"/>
+    </Jump>
+    <Run Repeat="1" Time="100">
+      <sprite n="BigRun1.png" x="141" y="134" w="69" h="129" pX="0.5" pY="0.5" oX="0" oY="6" oW="69" oH="135"/>
+      <sprite n="BigRun2.png" x="68" y="275" w="59" h="131" pX="0.5" pY="0.5"/>
+      <sprite n="BigRun3.png" x="1" y="1" w="68" h="135" pX="0.5" pY="0.5"/>
+    </Run>
+    <Crouch Repeat ="0" Time="100">
+      <sprite n="Crouch.png" x="137" y="400" w="67" h="95" pX="0.5" pY="0.5" oX="0" oY="40" oW="67" oH="135"/>
+    </Crouch>
+  </Big>
+  <Small>
+    <Idle Repeat ="0" Time="100">
+      <sprite n="SmallIdle.png" x="212" y="134" w="53" h="66" pX="0.5" pY="0.5" oX="6" oY="0" oW="65" oH="66"/>
+    </Idle>
+    <Jump Repeat ="0" Time="100">
+      <sprite n="SmallJump.png" x="1" y="412" w="68" h="66" pX="0.5" pY="0.5"/>
+    </Jump>
+    <Run Repeat="1" Time="100">
+      <sprite n="SmallRun1.png" x="206" y="426" w="57" h="64" pX="0.5" pY="0.5" oX="9" oY="2" oW="69" oH="66"/>
+      <sprite n="SmallRun2.png" x="212" y="202" w="46" h="66" pX="0.5" pY="0.5"/>
+      <sprite n="SmallRun3.png" x="71" y="408" w="64" h="66" pX="0.5" pY="0.5" oX="0" oY="0" oW="67" oH="66"/>
+    </Run>
+    <Die Repeat ="0" Time="100">
+      <sprite n="Die.png" x="206" y="366" w="61" h="58" pX="0.5" pY="0.5" oX="3" oY="0" oW="67" oH="66"/>
+    </Die>
+  </Small>
+  <Flower>
+    <Idle Repeat ="0" Time="100">
+      <sprite n="FIdle.png" x="71" y="1" w="66" h="135" pX="0.5" pY="0.5"/>
+    </Idle>
+    <Jump Repeat ="0" Time="100">
+      <sprite n="FJump.png" x="71" y="138" w="68" h="131" pX="0.5" pY="0.5" oX="0" oY="0" oW="68" oH="135"/>
+    </Jump>
+    <Run Repeat="1" Time="100">
+      <sprite n="FRun1.png" x="129" y="271" w="67" h="127" pX="0.5" pY="0.5" oX="0" oY="7" oW="67" oH="134"/>
+      <sprite n="FRun2.png" x="209" y="1" w="58" h="131" pX="0.5" pY="0.5"/>
+      <sprite n="FRun3.png" x="1" y="138" w="68" h="135" pX="0.5" pY="0.5"/>
+    </Run>
+    <Crouch Repeat ="0" Time="100">
+      <sprite n="FCrouch.png" x="198" y="270" w="67" h="94" pX="0.5" pY="0.5" oX="0" oY="41" oW="67" oH="135"/>
+    </Crouch>
+    <Attack Repeat="0" Time="100">
+      <sprite n="FRun1.png" x="129" y="271" w="65" h="127" pX="0.5" pY="0.5" oX="0" oY="7" oW="67" oH="134"/>
+    </Attack>
+  </Flower>
+  <Change>
+    <Bigger Repeat ="0" Time ="500">
+      <sprite n="SmallIdle.png" x="212" y="134" w="53" h="66" pX="0.5" pY="0.5" oX="6" oY="0" oW="65" oH="66"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="SmallIdle.png" x="212" y="134" w="53" h="66" pX="0.5" pY="0.5" oX="6" oY="0" oW="65" oH="66"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+    </Bigger>
+    <BigFlower Repeat="0" Time ="500">
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="FIdle.png" x="71" y="1" w="66" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="FIdle.png" x="71" y="1" w="66" h="135" pX="0.5" pY="0.5"/>
+    </BigFlower>
+    <Smaller Repeat ="0" Time ="500">
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="SmallIdle.png" x="212" y="134" w="53" h="66" pX="0.5" pY="0.5" oX="6" oY="0" oW="65" oH="66"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="SmallIdle.png" x="212" y="134" w="53" h="66" pX="0.5" pY="0.5" oX="6" oY="0" oW="65" oH="66"/>
+    </Smaller>
+    <NotFlower Repeat="0" Time ="500">
+      <sprite n="FIdle.png" x="71" y="1" w="66" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="FIdle.png" x="71" y="1" w="66" h="135" pX="0.5" pY="0.5"/>
+      <sprite n="BigIdle.png" x="1" y="275" w="65" h="135" pX="0.5" pY="0.5"/>
+    </NotFlower>
+  </Change>
+</TextureAtlas>

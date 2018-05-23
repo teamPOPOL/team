@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:e803ccaa664b65820031b186a29a45ac:2cc75262e02f36cbdbdf1a31b33af43d:b9a347ef6fe1c5b754243a9d5f492e68$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="FireBall.png" width="62" height="103">
+	<Boom Repeat = "0" Time = "100">
+	    <sprite n="Boom1.png" x="34" y="45" w="21" h="22" pX="0.5" pY="0.5" oX="8" oY="9" oW="38" oH="39"/>
+	    <sprite n="Boom2.png" x="1" y="44" w="31" h="36" pX="0.5" pY="0.5" oX="3" oY="2" oW="38" oH="38"/>
+	    <sprite n="Boom3.png" x="1" y="1" w="38" h="41" pX="0.5" pY="0.5" oX="0" oY="1" oW="38" oH="42"/>
+    </Boom>
+    <Fire Repeat = "1" Time = "100">
+	    <sprite n="FireBall1.png" x="41" y="1" w="20" h="20" pX="0.5" pY="0.5"/>
+	    <sprite n="FireBall2.png" x="41" y="23" w="20" h="20" pX="0.5" pY="0.5"/>
+	    <sprite n="FireBall3.png" x="1" y="82" w="20" h="20" pX="0.5" pY="0.5"/>
+	    <sprite n="FireBall4.png" x="23" y="82" w="20" h="20" pX="0.5" pY="0.5"/>
+    </Fire>
+</TextureAtlas>
